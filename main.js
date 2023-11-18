@@ -3,6 +3,8 @@ const IMAGE_HEIGHT = 1536;
 
 // responsive canvas
 var canvas = document.getElementById("canvas");
+canvas.style.cursor = "default";
+
 var widthRatio = IMAGE_WIDTH / IMAGE_HEIGHT;
 canvas.height = IMAGE_HEIGHT; //document.body.scrollHeight;
 canvas.width = IMAGE_WIDTH; //canvas.height * widthRatio;
@@ -78,7 +80,7 @@ function addAsset(
 			if (intersects(e, oX, oY, oWidth, oHeight)) {
 				clickedAsset = url;
 				drawScreen();
-				Audio.play(audioId % 10);
+				Audio.play(audioId % 15);
 				clearTimeout(redrawScreenTO);
 				redrawScreenTO = setTimeout(function () {
 					clickedAsset = null;
@@ -107,7 +109,7 @@ function addAllAssets() {
 	addAsset("./assets/renard.png", 12, 835, 1255, 365, 269, true);
 	addAsset("./assets/graines.png", 13, 910, 871, 92, 62, true);
 	addAsset("./assets/pomme.png", 14, 1395, 1264, 43, 64);
-	addAsset("./assets/feuille.png", 15, 1510, 1519, 106, 64);
+	//addAsset("./assets/feuille.png", 15, 1510, 1450, 106, 64);
 	addAsset("./assets/baies.png", 16, 398, 896, 57, 67);
 }
 
@@ -131,16 +133,22 @@ window.onload = function () {
 	var bufferLoader = new BufferLoader(
 		Audio.audioContext,
 		[
-			"./sound/A4.mp3",
-			"./sound/A5.mp3",
-			"./sound/C4.mp3",
-			"./sound/C5.mp3",
-			"./sound/D4.mp3",
-			"./sound/D5.mp3",
-			"./sound/E4.mp3",
-			"./sound/E5.mp3",
-			"./sound/G4.mp3",
-			"./sound/G5.mp3",
+			"./sound/3-g.wav",
+			"./sound/4-a.wav",
+			"./sound/4-as.wav",
+			"./sound/4-b.wav",
+			"./sound/4-c.wav",
+			"./sound/4-cs.wav",
+			"./sound/4-d.wav",
+			"./sound/4-ds.wav",
+			"./sound/4-e.wav",
+			"./sound/4-f.wav",
+			"./sound/4-fs.wav",
+			"./sound/4-g.wav",
+			"./sound/4-gs.wav",
+			"./sound/5-a.wav",
+			"./sound/5-b.wav",
+			"./sound/5-c.wav"
 		],
 		finishedLoading
 	);
