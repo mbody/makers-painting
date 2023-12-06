@@ -108,7 +108,7 @@ function addAllAssets() {
 	addAsset("./assets/oiseau4.png", 11, 908, 223, 115, 118);
 	addAsset("./assets/renard.png", 12, 835, 1255, 365, 269, true);
 	addAsset("./assets/graines.png", 13, 910, 871, 92, 62, true);
-	addAsset("./assets/pomme.png", 14, 1395, 1264, 43, 64);
+	//addAsset("./assets/pomme.png", 14, 1395, 1264, 43, 64);
 	//addAsset("./assets/feuille.png", 15, 1510, 1450, 106, 64);
 	addAsset("./assets/baies.png", 16, 398, 896, 57, 67);
 }
@@ -133,22 +133,21 @@ window.onload = function () {
 	var bufferLoader = new BufferLoader(
 		Audio.audioContext,
 		[
-			"./sound/3-g.wav",
-			"./sound/4-a.wav",
-			"./sound/4-as.wav",
-			"./sound/4-b.wav",
-			"./sound/4-c.wav",
-			"./sound/4-cs.wav",
-			"./sound/4-d.wav",
-			"./sound/4-ds.wav",
-			"./sound/4-e.wav",
-			"./sound/4-f.wav",
-			"./sound/4-fs.wav",
-			"./sound/4-g.wav",
-			"./sound/4-gs.wav",
-			"./sound/5-a.wav",
-			"./sound/5-b.wav",
-			"./sound/5-c.wav"
+			"./sound/3E.wav",
+			"./sound/3G.wav",
+			"./sound/4A.wav",
+			"./sound/4BS.wav",
+			"./sound/4B.wav",
+			"./sound/4C.wav",
+			"./sound/4DS.wav",
+			"./sound/4D.wav",
+			"./sound/4E.wav",
+			"./sound/4F.wav",
+			"./sound/4G.wav",
+			"./sound/5A.wav",
+			"./sound/4B.wav",
+			"./sound/5F.wav",
+			"./sound/5G.wav"
 		],
 		finishedLoading
 	);
