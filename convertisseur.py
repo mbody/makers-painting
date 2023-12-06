@@ -4,7 +4,7 @@ entree = input("Notes : ")
 entree = entree.replace("\n\t", "")
 entree = entree.split(" ")
 
-notes = [".", "3G" ,"4A", "4AS", "4B", "4C", "4CS", "4D", "4DS", "4E", "4F", "4FS", "4G", "AGS", "5A", "5B", "5C"]
+notes = [".", "3E" ,"3G", "4A", "4BS", "4B", "4C", "4DS", "4D", "4E", "4F", "4G", "5A", "5B", "5F", "5G"]
 
 images = ["", "./assets/herisson1.png",
     "./assets/herisson2.png",
@@ -20,7 +20,7 @@ images = ["", "./assets/herisson1.png",
     "./assets/oiseau4.png",
     "./assets/renard.png",
     "./assets/graines.png",
-    "./assets/pomme.png",
+    #"./assets/pomme.png",
     #"./assets/feuille.png",
     "./assets/baies.png",]
 
